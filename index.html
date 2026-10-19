@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melody - Feel The Music</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="melovia/css/style.css">
+</head>
+<body>
+
+<!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#home">  <i class="bi bi-music-note-beamed"></i> Melovia</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-9 hero-text-box">
+          <p class="hero-small">Welcome to Melovia</p>
+          <h1 class="hero-heading">Your Journey Through Music</h1>
+          <p class="hero-para">
+            The world's best songs, all in one place. Listen, enjoy, and discover your favorite artists.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#music" class="btn main-btn">
+              <i class="bi bi-play-fill"></i> Listen Now</a>
+            <a href="#artists" class="btn hero-btn-outline">
+              <i class="bi bi-people-fill"></i> Meet Artists</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- abt section -->
+  <section id="about" class="about-section">
+    <div class="container text-center">
+      <h2 class="section-title text-center">About Melovia</h2>
+
+      <p class="section-para about-intro">
+        Melovia is a simple music platform. Here, you can listen to both old and new songs.
+      </p>
+      <p class="section-para about-intro">
+        Our goal is to provide every music lover with the best experience, completely free and incredibly easy.
+      </p>
+
+      <div class="row g-4 about-features">
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-music-note-list"></i></div>
+            <h5 class="feature-title">Old &amp; New Songs</h5>
+            <p class="feature-text">From timeless classics to today's hits, all in one place.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-gift-fill"></i></div>
+            <h5 class="feature-title">Completely Free</h5>
+            <p class="feature-text">Listen to your favorite songs without paying anything.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h5 class="feature-title">Super Easy</h5>
+            <p class="feature-text">Simple and clean. Just press play and enjoy.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#music" class="btn main-btn about-btn">Explore Music</a>
+    </div>
+  </section>
+
+  <!-- album -->
+  <section id="music" class="music-section">
+    <div class="container">
+      <h2 class="section-title text-center">Popular Albums</h2>
+      <p class="section-sub text-center">Some great albums that you'll love.</p>
+
+      <div class="row g-4">
+
+        <!-- albm 1 --> 
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/atif aslam.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">Aadat</h5>
+              <p class="album-artist">Atif Aslam</p>
+              <button class="btn play-btn play-song" data-song="Aadat" data-artist="Atif Aslam">
+                <i class="bi bi-play-fill"></i> Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- albm 2 -->
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/bargad arpit.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">Bargad</h5>
+              <p class="album-artist">Arpit Bala</p>
+              <button class="btn play-btn play-song" data-song="Bargad" data-artist="Arpit Bala">
+                  <i class="bi bi-play-fill"></i> Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- albm 3 -->
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/murtaza bhool.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">Bhool</h5>
+              <p class="album-artist">Murtaza Qizilbish</p>
+              <button class="btn play-btn play-song" data-song="Bhool" data-artist="Murtaza Qizilbish">
+                  <i class="bi bi-play-fill"></i> Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Albm 4 -->
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/zach.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">missin something</h5>
+            
+              <p class="album-artist">Zach Templar</p>
+              <button class="btn play-btn play-song" data-song="missin something" data-artist="Zach Templar">
+                  <i class="bi bi-play-fill"></i> Play
+              </button>
+              <!-- <audio src="melovia/audio/aadat.mp3"></audio> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- albm 5 -->
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/rangeen hasan.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">Rangeen</h5>
+              
+              <p class="album-artist">Hassan Raheem</p>
+              <button class="btn play-btn play-song" data-song="Rangeen" data-artist="Hassan Raheem">
+                  <i class="bi bi-play-fill"></i> Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- albm 6 -->
+        <div class="col-md-4">
+          <div class="card album-card">
+            <img src="melovia/images/jb.jpg" alt="Album" class="album-img">
+            <div class="card-body">
+              <h5 class="album-title">That Should Be Me</h5>
+              <p class="album-artist">Justin Bieber</p>
+              <button class="btn play-btn play-song" data-song="That Should Be Me" data-artist="Justin Bieber">
+                  <i class="bi bi-play-fill"></i> Play
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- featured artists -->
+  <section id="artists" class="artist-section">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Artists</h2>
+
+      <div class="row g-4 artist-row">
+
+        <!-- art 1 -->
+        <div class="col-md-4">
+          <div class="artist-card">
+            <span class="artist-badge">&#9733; Featured</span>
+            <img src="melovia/images/mohit.webp" alt="Mohit Chauhan" class="artist-img">
+            <h3 class="artist-name-heading">Mohit Chauhan</h3>
+            <p class="artist-role">Playback &amp; Indi-pop Singer</p>
+            <p class="section-para">
+              One of India's most celebrated singers, known as the soulful "voice of romance" in modern Bollywood. Hits include "Tum Se Hi", "Kun Faya Kun", "Illahi" and "Dooba Dooba".
+            </p>
+            <div class="artist-buttons">
+              <a href="https://share.google/Sm5M7yrt9H4erQjSS" class="btn social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://share.google/0ZXB0K0J0nhz2Qj8y" class="btn social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://share.google/LCXQMu3K3KfI25Si7" class="btn social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- art 2 -->
+        <div class="col-md-4">
+          <div class="artist-card">
+            <img src="melovia/images/arjit singh.jpg" alt="Arijit Singh" class="artist-img">
+            <h3 class="artist-name-heading">Arijit Singh</h3>
+            <p class="artist-role">Playback Singer</p>
+            <p class="section-para">
+              One of the most loved voices in Indian music. His emotional songs like "Tum Hi Ho", "Channa Mereya" and "Kesariya" are listened to all over the world.
+            </p>
+            <div class="artist-buttons">
+              <a href="https://share.google/lQlmwtG1zb0goz4aH" class="btn social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://share.google/bXqHC0AjGqDPns9Vi" class="btn social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://share.google/QjT2aoYtFTatjwmnK" class="btn social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- art 3 -->
+        <div class="col-md-4">
+          <div class="artist-card">
+            <img src="melovia/images/atif aslam.jpg" alt="Atif Aslam" class="artist-img">
+            <h3 class="artist-name-heading">Atif Aslam</h3>
+            <p class="artist-role">Pop &amp; Playback Singer</p>
+            <p class="section-para">
+              A popular singer from Pakistan with fans across the world. Known for hits like "Aadat", "Tera Hone Laga Hoon" and "Pehli Nazar Mein".
+            </p>
+            <div class="artist-buttons">
+              <a href="https://share.google/qEn7HHxkpMGaBV8yx" class="btn social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://share.google/72lIjdiPDuLV7PiT1" class="btn social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://share.google/hQQphTCH9owIp9spN" class="btn social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- music player -->
+  <section id="player" class="player-section">
+    <div class="container">
+      <h2 class="section-title text-center">Now Playing</h2>
+      <p class="section-sub text-center">Choose a song and enjoy the music.</p>
+
+      <div class="player-box" id="musicPlayer">
+        <div class="player-cover-wrap">
+          <img id="playerCover" class="player-cover" src="melovia/images/atif aslam.jpg" alt="Aadat cover">
+          <div class="player-playing-bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="player-info">
+          <span class="player-label">CURRENTLY PLAYING</span>
+          <h4 id="songTitle" class="player-song">Aadat</h4>
+          <p id="songArtist" class="player-artist">Atif Aslam</p>
+        </div>
+
+        <div class="progress-area">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="progressSlider" min="0" max="100" value="0" aria-label="Song progress">
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="player-buttons">
+          <button id="prevBtn" class="btn player-control" aria-label="Previous song">
+            <i class="bi bi-skip-backward-fill"></i>
+          </button>
+          <button id="playBtn" class="btn player-main-btn" aria-label="Play song">
+            <i class="bi bi-play-fill"></i>
+          </button>
+          <button id="nextBtn" class="btn player-control" aria-label="Next song">
+            <i class="bi bi-skip-forward-fill"></i>
+          </button>
+        </div>
+
+        <div class="player-bottom">
+          <div class="volume-area">
+            <i class="bi bi-volume-down-fill"></i>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50" aria-label="Volume">
+            <i class="bi bi-volume-up-fill"></i>
+            <span id="volumeValue">50%</span>
+          </div>
+
+          <button id="likeBtn" class="btn like-btn" aria-label="Like song">
+            <i class="bi bi-heart"></i> Like
+          </button>
+        </div>
+
+        <p id="audioMsg" class="audio-msg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- cntct section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Us</h2>
+      <p class="section-sub text-center">If you have any questions or suggestions, let us know.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" pattern="[A-Za-z]+(?:[ ]+[A-Za-z]+)*" minlength="3" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control"        pattern="[a-z0-9]{3,}@[a-z0-9]+\.[a-z]{2,}"
+              title="Example:abc@gmail.com" minlength="3" id="email" placeholder="Your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject"        pattern=".\S."
+              title="Subject must be 3-100 characters" required>
+            </div>
+
+          <div class="mb-3">
+    <label for="message">Message</label>
+    <textarea 
+        name="message"
+        id="message"
+        class="form-control"
+        placeholder="Enter your message"
+        required
+        minlength="5"
+        title="Please enter a valid message with at least 5 characters."
+    ></textarea>
+</div>
+
+            <button type="submit" class="btn main-btn w-100">  <i class="bi bi-send-fill"></i> Send Message</button>
+          </form>
+
+          <div id="formAlert" class="alert alert-success mt-3 d-none">
+              Thank you! We received your message.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="main-footer">
+    <div class="container text-center">
+      <h5 class="footer-brand">Melovia</h5>
+      <p class="footer-text">Feel the music, live the moment.</p>
+      <p class="footer-copy">&copy; 2025 Melovia. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+         <a href="#"><i class="bi bi-facebook"></i></a>
+         <a href="#"><i class="bi bi-instagram"></i></a>
+         <a href="#"><i class="bi bi-youtube"></i></a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="melovia/js/script.js"></script>
+</body>
+</html>
